@@ -1,0 +1,53 @@
+$primary: #f95860;
+nav.uk-navbar-container{
+  background: white !important;
+  .uk-active a{color: $primary}
+}
+
+.hero{
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding-top: 195px;
+  padding-bottom: 195px;
+  .card-style{
+    text-transform: uppercase;
+    background-color: $primary;
+  }
+}
+
+a.el-content{color: $primary}
+
+#search{
+  background-color: $primary;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+form{
+  input{
+    width: 100%;
+  }
+  input[type="submit"]{
+    background-color: white;
+    &:hover{
+      color: white;
+      background-color: lighten($primary,10);
+    }
+  }
+  .uk-inline{width: 100%;}
+}
+
+.busca-site{
+  position: absolute;
+  top: -70px;
+  width: 100%;
+}
+#container{
+  position: relative;
+  top: 0;
+  transition: top 500ms;
+  &.buscaVisivel{
+    top: 70px;
+  }
+}

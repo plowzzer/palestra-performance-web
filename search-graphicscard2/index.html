@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Video card 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="search" class="busca-site">
+        <div class="uk-container">
+          <form class="uk-grid-small" action="index.html" method="post" uk-grid>
+            <div class="uk-width-3-4">
+              <div class="uk-inline">
+                  <span class="uk-form-icon" uk-icon="icon: search"></span>
+                  <input class="uk-input" placeholder="Escreva aqui o que esta procurando">
+              </div>
+            </div>
+            <div class="uk-width-1-4">
+              <input class="uk-button uk-button-default" type="submit" value="Procurar">
+            </div>
+          </form>
+        </div>
+      </div>
+      <header>
+        <div class="uk-container">
+          <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+              <a href="" class="uk-navbar-item uk-logo"></a>
+            </div>
+            <div class="uk-navbar-right">
+              <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="">Turismo</a></li>
+                <li class="uk-parent"><a href="">Hospedar</a></li>
+                <li id="btn-search"><a uk-icon="icon: search" onclick="btnBusca()"></a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <div class="hero" style="background-image: url('img/dublin.jpg');">
+        <div class="uk-container">
+          <div class="tm-header-placeholder uk-margin-remove-adjacent" style="height: 106px"></div>
+          <div class="uk-grid-margin uk-grid" uk-grid="">
+            <div class="uk-width-2-3@m uk-first-column">
+            </div>
+            <div class="uk-width-expand@m">
+              <div class="uk-margin uk-text-center uk-card uk-card-secondary uk-card-large uk-card-body card-style">
+              <div class="el-meta uk-margin uk-h5 uk-margin-remove-adjacent">Location</div>
+                <h3 class="el-title uk-margin uk-h2">Dublin<br>Ireland</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="uk-margin-xlarge uk-grid" uk-grid="">
+            <div class="uk-width-2-3@m uk-first-column">
+              <!-- map here -->
+            </div>
+            </div>
+            <div class="uk-width-expand@m">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="uk-container">
+        <div class="uk-grid-margin uk-grid" uk-grid="">
+          <div class="uk-width-expand@m uk-first-column">
+            <h2 class="uk-h1 uk-scrollspy-inview uk-animation-slide-bottom-medium" uk-scrollspy-class="" style="">Guinness Storehouse</h2>
+            <div class="uk-margin uk-text-lead uk-scrollspy-inview uk-animation-slide-bottom-medium" uk-scrollspy-class="" style="">
+              Experiência na cervejaria que conta a história da famosa cerveja irlandesa, com degustações e bar no terraço.
+            </div>
+          </div>
+          <div class="uk-width-2-3@m">
+            <div class="uk-margin uk-scrollspy-inview uk-animation-slide-bottom-medium" uk-scrollspy-class="" style="">
+              <img src="img/guinness.jpeg" sizes="(min-width: 899px) 899px, 100vw" width="899" class="el-image uk-box-shadow-xlarge" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="uk-grid-margin uk-grid" uk-grid="">
+          <div class="uk-width-expand@m uk-first-column">
+          </div>
+          <div class="uk-width-expand@m">
+            <h3 class="uk-card-title uk-scrollspy-inview uk-animation-slide-bottom-medium" uk-scrollspy-class="" style="">Sobre</h3>
+            <div class="uk-margin uk-scrollspy-inview uk-animation-slide-bottom-medium" uk-scrollspy-class="" style="">
+              Uma jogada de marketing esperta transformou uma boa cerveja porter (a stout é um tipo de porter) em ícone de uma cidade, de um país.
+              Quebrando recordes mundiais ou não, a Guinness Storehouse é provavelmente a atração turística número 1 de Dublin, atraindo milhares
+              de visitantes para conhecer um pouco mais da história do creme negro, sempre servido entre 6 e 7 graus.
+            </div>
+            <div class="uk-margin uk-scrollspy-inview uk-animation-slide-bottom-medium" uk-scrollspy-class="" style="">
+              <div class="uk-flex-middle uk-child-width-auto uk-grid-small uk-grid" uk-grid="">
+                <div class="el-item uk-first-column">
+                  <a class="el-content" href="#" uk-scroll="">Visitar site</a>
+                </div>
+                <div class="el-item">
+                  <a class="el-content" href="#" target="_blank">Ver no mapa</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="uk-width-expand@m">
+            <h3 class="uk-card-title uk-scrollspy-inview uk-animation-slide-bottom-medium" uk-scrollspy-class="" style="">Localização</h3>
+            <div class="uk-margin uk-scrollspy-inview uk-animation-slide-bottom-medium" uk-scrollspy-class="" style="">
+              St James's Gate, Ushers<br>Dublin 8<br>Irlanda
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer>
+      <script type="text/javascript">
+        function btnBusca() {
+          var container = document.getElementById("container");
+          var btn = document.getElementById("btn-search");
+
+
+          container.classList.toggle("buscaVisivel");
+          btn.classList.toggle("uk-active");
+
+        };
+      </script>
+    </footer>
+  </body>
+</html>

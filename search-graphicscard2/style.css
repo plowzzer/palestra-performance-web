@@ -1,0 +1,70 @@
+/* line 2, sass/style.scss */
+nav.uk-navbar-container {
+  background: white !important;
+}
+/* line 4, sass/style.scss */
+nav.uk-navbar-container .uk-active a {
+  color: #f95860;
+}
+
+/* line 7, sass/style.scss */
+.hero {
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding-top: 195px;
+  padding-bottom: 195px;
+}
+/* line 13, sass/style.scss */
+.hero .card-style {
+  text-transform: uppercase;
+  background-color: #f95860;
+}
+
+/* line 19, sass/style.scss */
+a.el-content {
+  color: #f95860;
+}
+
+/* line 21, sass/style.scss */
+#search {
+  background-color: #f95860;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+/* line 28, sass/style.scss */
+form input {
+  width: 100%;
+}
+/* line 31, sass/style.scss */
+form input[type="submit"] {
+  background-color: white;
+}
+/* line 33, sass/style.scss */
+form input[type="submit"]:hover {
+  color: white;
+  background-color: #fb898f;
+}
+/* line 38, sass/style.scss */
+form .uk-inline {
+  width: 100%;
+}
+
+/* line 41, sass/style.scss */
+.busca-site {
+  position: absolute;
+  top: -70px;
+  width: 100%;
+}
+
+/* line 46, sass/style.scss */
+#container {
+  position: relative;
+  top: 0;
+  transition: top 500ms;
+}
+/* line 50, sass/style.scss */
+#container.buscaVisivel {
+  top: 70px;
+}

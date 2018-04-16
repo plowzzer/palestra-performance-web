@@ -1,0 +1,44 @@
+$primary: #6e2b78;
+
+body{
+  background-color: #f9f9f9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.card{
+  position: relative;
+  margin-top: 30px !important;
+  button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 5px;
+    border-radius: 100%;
+  }
+  &:hover button{
+    background-color: #f9f9f9;
+  }
+  h3{
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+  }
+  small{
+    margin-left: 10px;
+    font-size: 50%;
+    &.alert{
+      color: white;
+      background-color: $primary;
+      padding: 2px;
+      border-radius: 3px;
+    }
+    &.alert-red{
+      background-color: #ab182b;
+    }
+  }
+  &.remove{position: absolute;}
+}
+.anima .card{
+  transition: 500ms ease-out;
+  &.remove{opacity: 0;}
+}

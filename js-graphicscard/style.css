@@ -1,0 +1,59 @@
+/* line 3, sass/style.scss */
+body {
+  background-color: #f9f9f9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 8, sass/style.scss */
+.card {
+  position: relative;
+  margin-top: 30px !important;
+}
+/* line 11, sass/style.scss */
+.card button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 5px;
+  border-radius: 100%;
+}
+/* line 18, sass/style.scss */
+.card:hover button {
+  background-color: #f9f9f9;
+}
+/* line 21, sass/style.scss */
+.card h3 {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+}
+/* line 26, sass/style.scss */
+.card small {
+  margin-left: 10px;
+  font-size: 50%;
+}
+/* line 29, sass/style.scss */
+.card small.alert {
+  color: white;
+  background-color: #6e2b78;
+  padding: 2px;
+  border-radius: 3px;
+}
+/* line 35, sass/style.scss */
+.card small.alert-red {
+  background-color: #ab182b;
+}
+/* line 39, sass/style.scss */
+.card.remove {
+  position: absolute;
+}
+
+/* line 41, sass/style.scss */
+.anima .card {
+  transition: 500ms ease-out;
+}
+/* line 43, sass/style.scss */
+.anima .card.remove {
+  opacity: 0;
+}
